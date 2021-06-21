@@ -1,12 +1,41 @@
 import React, { Component } from 'react'
+import { Card } from 'react-bootstrap';
 
 class HornedBeast extends Component {
+    constructor (props){
+        super(props);
+        this.state={
+            vote:0,
+        }
+    }
+    riseVote=()=>{
+        this.setState({
+            vote:this.state.vote+1,
+        })
+    }
     render() {
         return (
+
+            
             <div>
-                <h2>UniWhal</h2>
-                <img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"/>
-                <p>A unicorn and a narwhal nuzzling their horns</p>
+
+     <Card style={{ width: '18rem' , height:'500px'}}>
+     <Card.Img variant="top" src={this.props.image_url} onClick= {this.riseVote} height='300px' />
+     <Card.Body>
+     <Card.Title>{this.props.title}</Card.Title>
+     <Card.Text>
+     {this.props.description}
+     </Card.Text>
+     <span> <i className="fas fa-heart"> {this.state.vote}</i></span>
+     
+      </Card.Body>
+      </Card>
+
+
+                {/* <h2>{this.props.title}</h2>
+               <a onClick={this.riseVote}>  <img src={this.props.image_url}  width='300px' height="300px" /></a>
+               <span> <i className="fas fa-heart"> {this.state.vote}</i></span>
+                <p>{this.props.description} </p> */}
             </div>
         )
     }
