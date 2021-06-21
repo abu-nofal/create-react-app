@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 
  class Footer  extends Component {
+   
     render() {
         return (
             <div>
-              <footer >Asac </footer>
+              <footer > Ahmad nofal &copy; 2021 </footer>
             </div>
         )
     }
