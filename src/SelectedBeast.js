@@ -23,8 +23,8 @@ class SelectedBeast extends Component {
               show more  
             </Button>
       
-            <Modal show={this.state.show} onHide={this.state.show}>
-              <Modal.Header closeButton onClick={this.handleModel}>
+            <Modal show={this.state.show} onHide={this.handleModel}>
+              <Modal.Header closeButton >
                 <Modal.Title>{this.props.title}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
