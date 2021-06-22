@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Card } from 'react-bootstrap';
+import SelectedBeast from './SelectedBeast'
 
 class HornedBeast extends Component {
     constructor (props){
@@ -19,15 +20,20 @@ class HornedBeast extends Component {
             
             <div>
 
-     <Card style={{ width: '18rem' , height:'500px'}}>
-     <Card.Img variant="top" src={this.props.image_url} onClick= {this.riseVote} height='300px' />
+     <Card style={{ width: '18rem' , height:'480px'}}>
+     <Card.Img variant="top" src={this.props.image_url} onClick= {this.riseVote} height='250px' />
      <Card.Body>
      <Card.Title>{this.props.title}</Card.Title>
      <Card.Text>
      {this.props.description}
      </Card.Text>
+     <SelectedBeast title={this.props.title} 
+                     description= {this.props.description}
+                     image_url={this.props.image_url}
+                     vote={this.state.vote}/>
+    
+                     
      <span> <i className="fas fa-heart"> {this.state.vote}</i></span>
-     
       </Card.Body>
       </Card>
 
