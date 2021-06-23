@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
-import HornedBeast from './HornedBeast' 
-import {CardColumns} from 'react-bootstrap';
-import DataBest from './data.json' 
+// import HornedBeast from './HornedBeast' 
+// import {CardColumns} from 'react-bootstrap';
+// import DataBest from './data.json' 
+import FilterForm from './FilterForm';
+
 
 
 
  class Main extends Component {
-  // viewTitle=()=>{
-  //   arr.forEach(value =>{
-  //     let title =value.title;
-  //     return title ;
-  //   })
-  // }
+  
+
+ 
   
   render() {
     
@@ -19,16 +18,19 @@ import DataBest from './data.json'
    
     return (
       <div>
+        <FilterForm/>
         <div>
           
-        <CardColumns>
+        {/* <CardColumns>
           {DataBest.map((value,index)=>{
             return <HornedBeast title ={value.title} 
             image_url ={value.image_url}
             description={value.description}
-            key={index} />
+            horns={value.horns}
+            key={index} 
+            />
           })}
-          </CardColumns>
+          </CardColumns> */}
           </div> 
 
       

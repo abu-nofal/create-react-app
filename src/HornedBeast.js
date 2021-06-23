@@ -26,11 +26,15 @@ class HornedBeast extends Component {
      <Card.Title>{this.props.title}</Card.Title>
      <Card.Text>
      {this.props.description}
+     <p>number of horns: {this.props.horns}</p>
+     
      </Card.Text>
      <SelectedBeast title={this.props.title} 
                      description= {this.props.description}
                      image_url={this.props.image_url}
-                     vote={this.state.vote}/>
+                     vote={this.state.vote}
+                     horns={this.props.horns}
+                     key='index'/>
     
                      
      <span> <i className="fas fa-heart"> {this.state.vote}</i></span>
