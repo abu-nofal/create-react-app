@@ -113,3 +113,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Finish time: **3:30**
 
 - Actual time needed to complete: **2 hour**
+
+
+
+> Number and name of feature:**#5**
+
+- Estimate of time needed to complete:**3 hour**
+- Start time: **2**
+
+- Finish time: **6**
+
+- Actual time needed to complete: **4 hour**

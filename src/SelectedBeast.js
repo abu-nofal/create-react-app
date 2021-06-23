@@ -28,10 +28,12 @@ class SelectedBeast extends Component {
                 <Modal.Title>{this.props.title}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                  <img src={this.props.image_url} width='450px' height='200px' />
+                  <img src={this.props.image_url} width='100%' height='200px' />
                   <br/>
               
                   <p>{this.props.description}</p>
+                  
+                  <p> number of horns: {this.props.horns}</p>
                   <span> <i className="fas fa-heart"> {this.props.vote}</i></span>
                   </Modal.Body>
               <Modal.Footer>
